@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-movie-actors-table
+      author: me
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  name: actor_id
+                  type: bigint
+                  constraints:
+                    nullable: true
+              - column:
+                  name: movie_id
+                  type: bigint
+                  constraints:
+                    nullable: true

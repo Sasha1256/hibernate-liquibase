@@ -5,3 +5,5 @@ databaseChangeLog:
       file: db/changelog/changes/01-create-actors-table.yaml
   - include:
       file: db/changelog/changes/03-create-movie-table.yaml
+  - include:
+      file: db/changelog/changes/04-create-movie-actors-table.yaml
