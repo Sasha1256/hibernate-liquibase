@@ -1,9 +1,10 @@
 databaseChangeLog:
   - changeSet:
-      id: create-country-table
-      author: me
+      id: create-movies-table
+      author: root
       changes:
         - createTable:
+            tableName: movies
             columns:
               - column:
                   name: id
@@ -13,5 +14,10 @@ databaseChangeLog:
                     primaryKey: true
                     nullable: false
               - column:
-                  name: name
+                  name: title
                   type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: actors
+                  type: bigint

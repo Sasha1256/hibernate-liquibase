@@ -1,9 +1,10 @@
 databaseChangeLog:
   - changeSet:
-      id: create-movie-table
-      author: me
+      id: create-countries-table
+      author: root
       changes:
         - createTable:
+            tableName: countries
             columns:
               - column:
                   name: id
@@ -15,6 +16,5 @@ databaseChangeLog:
               - column:
                   name: name
                   type: varchar(255)
-              - column:
-                  name: actors_id
-                  type: bigint
+                  constraints:
+                    nullable: false
